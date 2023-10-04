@@ -22,7 +22,7 @@ const connect = async()=>{
         console.log(error);
     }
 }
-
+app.use(express.json());
 app.use("/api/auth",authRoute);
 app.use("/api/users",userRoute);
 app.use("/api/gigs",gigRoute);
